@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.main-container{
+    background-color: #10426e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.task-lst{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 20px 10px;
+    /* border: 2px solid red; */
+    line-height: 30px;
+}
+
+.add-task{
+    /* border: 2px solid yellow; */
+    margin: 5px 10px 20px 10px;
+}
+
+.input-field label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    line-height: 30px;
+    display: block;
+}
+
+.input-field #task{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    border-bottom: 1px solid orangered;
+    background: transparent;
+    margin: 10px 0 20px 0;
+}
+
+.input-field #task:focus, .input-field #task:active{
+    border-color: transparent;
+    border-bottom: 1px solid orangered;
+    outline: none;
+}
+
+.submit-task input{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #07c9b7;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-task input:hover, .clear-task:hover{
+    background-color: #0fdfca;
+}
+
+.input-field #filter{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    border-bottom: 1px solid orangered;
+    background: transparent;
+    margin: 10px 0 20px 0;
+}
+
+.input-field #filter:focus, .input-field #filter:active{
+    border-color: transparent;
+    border-bottom: 1px solid orangered;
+    outline: none;
+}
+
+.section-second .input-field{
+    margin: 5px 10px 20px 10px;
+}
+
+.clear-task{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #07c9b7;
+    color: white;
+    /* margin: 0 10px 0 10px; */
+}
+
+/* css for task lists through javascript */
+
+ul.collection{
+    /* border: 1px solid orangered; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: antiquewhite;
+}
+
+li.collection-item{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    /* list-style: none; */
+    width: 90%;
+    margin: auto;
+    color: #10426e;
+    border-bottom: 1px solid orangered;
+    position: relative;
+}
+
+li.collection-item:last-child{
+    border: none;
+}
+
+a.secondary-content{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+}
